@@ -1,15 +1,11 @@
 var loginModel = require('../model/loginModel');
 
 exports.login = function (req, res) {
-
     let u = new loginModel({
         email: req.body.email,
         password: req.body.password
     })
-
     u.save(function (err, data) {
-                             
-
         if (err) {
             res.json({
                 status: -1,
@@ -20,13 +16,10 @@ exports.login = function (req, res) {
             res.json({
                 status: 200,
                 data: data,
-                msg: "user save successfully"
+                msg: "User Save Successfully"
             })
         }
     })
-
 }
-
 exports.authenticate = function (req, res) {
-
 }

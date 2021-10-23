@@ -1,10 +1,12 @@
 var router = require("express").Router()
 
-var signupcontroller = require("./controller/signupcontroller")
-var logincontroller = require("./controller/logincontroller")
+var signUpController = require("./controller/signupController")
+var examController = require("./controller/examController")
+const { login } = require("./controller/loginController")
 
-router.route("/signup").post(signupcontroller.signup)
-router.route("/login").post(logincontroller.login)
+router.route("/signup").post(signUpController.saveuser)
+router.route("/login").post(login)
+
 
 
 module.exports = router

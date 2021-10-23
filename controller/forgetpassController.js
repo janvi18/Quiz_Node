@@ -1,12 +1,12 @@
-var User = require("../model/usermodel")
+var forgetPass = require("../model/forgetpassModel")
 var mongoose = require("mongoose")
 
-exports.updateUser = function (req, res) {
-    User.updateOne({ _id: req.body._id }, { $set: { firstName: req.body.firstName } }, function (err, data) {
+exports.forgotPassword = function (req, res) {
+    User.updateOne({ _id: req.body._id }, { $set: { password: req.body.password } }, function (err, data) {
         if (err) {
             res.json({
                 status: -1,
-                data: err,
+                data: req.body,
                 msg: "Something went wrong"
             })
         }
