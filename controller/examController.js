@@ -1,4 +1,5 @@
-var exam=require("../model/examModel")
+var exam=require("../model/ExamModel")
+var topic=require("../model/SubCategory")
 var mongoose=require("mongoose")
 
 exports.saveSub=(function(req,res){
@@ -17,7 +18,7 @@ exports.saveSub=(function(req,res){
             res.json({
                 status: 200,
                 data: data,
-                msg: "Subject saved Sucessfuly"
+                msg: "Subject Saved"
             })
         }
     })
@@ -39,7 +40,7 @@ exports.saveTopic=(function(req,res){
             res.json({
                 status: 200,
                 data: data,
-                msg: "Topic saved Sucessfuly"
+                msg: "Topic Saved"
             })
         }
 
@@ -58,7 +59,7 @@ exports.deleteTopic=function(req,res){
         res.json({
             status: 200,
             data: data,
-            msg: "Topic deleted Sucessfuly"
+            msg: "Topic Deleted.."
         })
     }
     })
