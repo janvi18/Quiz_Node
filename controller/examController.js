@@ -1,5 +1,5 @@
 var exam=require("../model/examModel")
-var topic=require("../model/subcategory")
+var topic=require("../model/subcategoryModel")
 var mongoose=require("mongoose")
 
 exports.saveSub=(function(req,res){
