@@ -1,4 +1,4 @@
-var exam=require("../model/ExamModel")
+var exam=require("../model/examModel")
 var mongoose=require("mongoose")
 
 exports.saveSub=(function(req,res){

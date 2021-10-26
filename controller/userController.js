@@ -1,4 +1,4 @@
-var User = require("../model/usermodel")
+var User = require("../model/userModel")
 var mongoose = require("mongoose")
 
 exports.updateUser = function (req, res) {
