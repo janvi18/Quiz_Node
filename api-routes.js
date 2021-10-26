@@ -2,7 +2,7 @@ var router = require("express").Router()
 
 var signUpController = require("./controller/signupController")
 var examController = require("./controller/examController")
-const { loginController } = require("./controller/loginController")
+var loginController = require("./controller/loginController")
 
 
 router.route("/signup").post(signUpController.saveuser)
