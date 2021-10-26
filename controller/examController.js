@@ -1,4 +1,4 @@
-var exam=require("../model/ExamModel")
+var exam=require("../model/examModel")
 var topic=require("../model/SubCategory")
 var mongoose=require("mongoose")
 
