@@ -1,4 +1,4 @@
-var User = require("../model/signupmodel")
+var User = require("../model/signupModel")
 var mongoose = require("mongoose")
 exports.saveuser = function (req, res) {
 
