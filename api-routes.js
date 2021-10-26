@@ -7,7 +7,6 @@ var forgetpassController = require("./controller/forgetpassController")
 
 router.route("/signup").post(signUpController.saveuser)
 router.route("/login").post(loginController.login)
-router.route("/users/:userId").get(signUpController.getuserByid)
 router.route("/updateUser").post(userController.updateUser)
 router.route("/forgotpassword").post(forgetpassController.forgotPassword)
 
